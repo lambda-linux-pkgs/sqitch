@@ -138,6 +138,9 @@ Requires:       perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $versi
 %define etcdir %(%{__perl} -MConfig -E 'say "$Config{prefix}/etc"')
 
 %description
+For package support, please visit
+https://github.com/lambda-linux-pkgs/%{name}/issues
+
 This application, `sqitch`, provides a simple yet robust interface for
 database change management. The philosophy and functionality is inspired by
 Git.
@@ -180,6 +183,9 @@ Requires:       perl(DBI)
 Requires:       perl(DBD::Pg) >= 2.0.0
 
 %description pg
+For package support, please visit
+https://github.com/lambda-linux-pkgs/%{name}/issues
+
 Sqitch provides a simple yet robust interface for database change
 management. The philosophy and functionality is inspired by Git. This
 package bundles the Sqitch PostgreSQL support.
@@ -196,6 +202,9 @@ Requires:       perl(DBI)
 Requires:       perl(DBD::SQLite) >= 1.37
 
 %description sqlite
+For package support, please visit
+https://github.com/lambda-linux-pkgs/%{name}/issues
+
 Sqitch provides a simple yet robust interface for database change
 management. The philosophy and functionality is inspired by Git. This
 package bundles the Sqitch SQLite support.
@@ -210,6 +219,9 @@ Requires:       sqitch >= %{version}
 Requires:       perl(DBI)
 
 %description oracle
+For package support, please visit
+https://github.com/lambda-linux-pkgs/%{name}/issues
+
 Sqitch provides a simple yet robust interface for database change
 management. The philosophy and functionality is inspired by Git. This
 package bundles the Sqitch Oracle support.
@@ -272,6 +284,9 @@ Requires:       perl(DBD::mysql) >= 4.018
 Requires:       perl(MySQL::Config)
 
 %description mysql
+For package support, please visit
+https://github.com/lambda-linux-pkgs/%{name}/issues
+
 Sqitch provides a simple yet robust interface for database change
 management. The philosophy and functionality is inspired by Git. This
 package bundles the Sqitch MySQL support.
