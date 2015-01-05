@@ -236,41 +236,6 @@ package bundles the Sqitch MySQL support.
 %files mysql
 # No additional files required.
 
-%package firebird
-Summary:        Sane database change management for Firebird
-Group:          Development/Libraries
-Requires:       sqitch >= %{version}
-Requires:       firebird >= 2.5.0
-Requires:       perl(DBI)
-Requires:       perl(DBD::Firebird) >= 1.11
-Requires:       perl(Time::HiRes)
-Requires:       perl(Time::Local)
-BuildRequires:  firebird-classic >= 2.5.0
-
-%description firebird
-Sqitch provides a simple yet robust interface for database change
-management. The philosophy and functionality is inspired by Git. This
-package bundles the Sqitch Firebird support.
-
-%files firebird
-# No additional files required.
-
-%package vertica
-Summary:        Sane database change management for Vertica
-Group:          Development/Libraries
-Requires:       sqitch >= %{version}
-Requires:       vertica-client >= 7.0.0
-Requires:       perl(DBI)
-Requires:       perl(DBD::ODBC) >= 1.43
-
-%description vertica
-Sqitch provides a simple yet robust interface for database change management.
-The philosophy and functionality is inspired by Git. This package bundles the
-Sqitch Vertica support.
-
-%files vertica
-# No additional files required.
-
 %changelog
 * Tue Nov 4 2014 David E. Wheeler <david.wheeler@iovation.com> 0.997-1
 - Upgrade to v0.997.
