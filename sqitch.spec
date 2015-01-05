@@ -207,9 +207,7 @@ package bundles the Sqitch SQLite support.
 Summary:        Sane database change management for Oracle
 Group:          Development/Libraries
 Requires:       sqitch >= %{version}
-Requires:       oracle-instantclient11.2-sqlplus
 Requires:       perl(DBI)
-Requires:       perl(DBD::Oracle) >= 1.23
 
 %description oracle
 Sqitch provides a simple yet robust interface for database change
@@ -218,6 +216,51 @@ package bundles the Sqitch Oracle support.
 
 %files oracle
 # No additional files required.
+
+%posttrans oracle -p <lua>
+msg = [[
+
+SQITCH ORACLE POST INSTALLATION NOTES
+-------------------------------------
+
+Thank you for installing `sqitch-oracle`.
+
+Unfortunately due to licensing issues, we cannot
+provide Oracle Instant Client RPMs in our
+repositories.
+
+Therefore, please go to,
+
+http://www.oracle.com/technetwork/topics/linuxx86-64soft-092277.html
+
+and download the following packages.
+
+- oracle-instantclient11.2-basic-11.2.0.4.0-1.x86_64.rpm
+- oracle-instantclient11.2-sqlplus-11.2.0.4.0-1.x86_64.rpm
+
+You can install the packages using the following
+command in the directory where you've downloaded
+the packages,
+
+```
+$ sudo yum install ./oracle-instantclient11.2-*.x86_64.rpm
+```
+
+Once the installation of Oracle Instant Client is
+complete, please install `perl-DBD-Oracle` package
+which is needed by `sqitch-oracle`.
+
+You can do this using the following command,
+
+```
+$ sudo yum --enablerepo=epll install perl-DBD-Oracle
+```
+
+This will complete your installation of
+`sqitch-oracle` package.
+
+]]
+print(msg)
 
 %package mysql
 Summary:        Sane database change management for MySQL
