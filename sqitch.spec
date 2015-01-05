@@ -297,6 +297,16 @@ package bundles the Sqitch MySQL support.
 # No additional files required.
 
 %changelog
+* Mon Jan 05 2015 Rajiv M Ranganath <rajiv.ranganath@atihita.com> 0.997-1
+- Adapt for AL/LL
+- Add package support URL
+- Update `sqitch-oracle` and add `%posttrans` notes
+- Update `sqitch-mysql` requires
+- Disable `firebird` and `vertica` support
+- Cleanup `%changelog`
+- Import `App-Sqitch-0.997.tar.gz`
+- Import spec file
+
 * Tue Nov 4 2014 David E. Wheeler <david.wheeler@iovation.com> 0.997-1
 - Upgrade to v0.997.
 
