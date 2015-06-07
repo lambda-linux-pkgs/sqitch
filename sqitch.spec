@@ -299,6 +299,13 @@ package bundles the Sqitch MySQL support.
 # No additional files required.
 
 %changelog
+* Sun Jun 07 2015 Rajiv M Ranganath <rajiv.ranganath@atihita.com> 0.9992-1
+- Upgrade to v0.9992
+- Import `App-Sqitch-0.9992.tar.gz`
+- Remove `App-Sqitch-0.997.tar.gz`
+- Require DateTime::TimeZone
+- Require Path::Class 0.33
+
 * Mon Jan 05 2015 Rajiv M Ranganath <rajiv.ranganath@atihita.com> 0.997-1
 - Adapt for AL/LL
 - Add package support URL
