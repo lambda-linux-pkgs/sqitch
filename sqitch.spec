@@ -178,15 +178,15 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/*
 %config %{etcdir}/*
 
-%package pg
-Summary:        Sane database change management for PostgreSQL
+%package pg92
+Summary:        Sane database change management for PostgreSQL 9.2
 Group:          Development/Libraries
-Requires:       sqitch >= %{version}
-Requires:       postgresql >= 8.4.0
+Requires:       sqitch = %{version}
+Requires:       postgresql92
 Requires:       perl(DBI)
 Requires:       perl(DBD::Pg) >= 2.0.0
 
-%description pg
+%description pg92
 For package support, please visit
 https://github.com/lambda-linux-pkgs/%{name}/issues
 
@@ -194,7 +194,45 @@ Sqitch provides a simple yet robust interface for database change
 management. The philosophy and functionality is inspired by Git. This
 package bundles the Sqitch PostgreSQL support.
 
-%files pg
+%files pg92
+# No additional files required.
+
+%package pg93
+Summary:        Sane database change management for PostgreSQL 9.3
+Group:          Development/Libraries
+Requires:       sqitch = %{version}
+Requires:       postgresql93
+Requires:       perl(DBI)
+Requires:       perl(DBD::Pg) >= 2.0.0
+
+%description pg93
+For package support, please visit
+https://github.com/lambda-linux-pkgs/%{name}/issues
+
+Sqitch provides a simple yet robust interface for database change
+management. The philosophy and functionality is inspired by Git. This
+package bundles the Sqitch PostgreSQL support.
+
+%files pg93
+# No additional files required.
+
+%package pg94
+Summary:        Sane database change management for PostgreSQL 9.4
+Group:          Development/Libraries
+Requires:       sqitch = %{version}
+Requires:       postgresql94
+Requires:       perl(DBI)
+Requires:       perl(DBD::Pg) >= 2.0.0
+
+%description pg94
+For package support, please visit
+https://github.com/lambda-linux-pkgs/%{name}/issues
+
+Sqitch provides a simple yet robust interface for database change
+management. The philosophy and functionality is inspired by Git. This
+package bundles the Sqitch PostgreSQL support.
+
+%files pg94
 # No additional files required.
 
 %package mysql
