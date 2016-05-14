@@ -235,16 +235,16 @@ package bundles the Sqitch PostgreSQL support.
 %files pg94
 # No additional files required.
 
-%package mysql
-Summary:        Sane database change management for MySQL
+%package mysql55
+Summary:        Sane database change management for MySQL 5.5
 Group:          Development/Libraries
-Requires:       sqitch >= %{version}
-Requires:       mysql >= 5.5.40
+Requires:       sqitch = %{version}
+Requires:       mysql55
 Requires:       perl(DBI)
-Requires:       perl(DBD::mysql) >= 4.018
+Requires:       perl-DBD-MySQL55
 Requires:       perl(MySQL::Config)
 
-%description mysql
+%description mysql55
 For package support, please visit
 https://github.com/lambda-linux-pkgs/%{name}/issues
 
@@ -252,7 +252,27 @@ Sqitch provides a simple yet robust interface for database change
 management. The philosophy and functionality is inspired by Git. This
 package bundles the Sqitch MySQL support.
 
-%files mysql
+%files mysql55
+# No additional files required.
+
+%package mysql56
+Summary:        Sane database change management for MySQL 5.6
+Group:          Development/Libraries
+Requires:       sqitch = %{version}
+Requires:       mysql56
+Requires:       perl(DBI)
+Requires:       perl-DBD-MySQL56
+Requires:       perl(MySQL::Config)
+
+%description mysql56
+For package support, please visit
+https://github.com/lambda-linux-pkgs/%{name}/issues
+
+Sqitch provides a simple yet robust interface for database change
+management. The philosophy and functionality is inspired by Git. This
+package bundles the Sqitch MySQL support.
+
+%files mysql56
 # No additional files required.
 
 %changelog
