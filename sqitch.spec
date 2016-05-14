@@ -197,25 +197,6 @@ package bundles the Sqitch PostgreSQL support.
 %files pg
 # No additional files required.
 
-%package sqlite
-Summary:        Sane database change management for SQLite
-Group:          Development/Libraries
-Requires:       sqitch >= %{version}
-Requires:       sqlite
-Requires:       perl(DBI)
-Requires:       perl(DBD::SQLite) >= 1.37
-
-%description sqlite
-For package support, please visit
-https://github.com/lambda-linux-pkgs/%{name}/issues
-
-Sqitch provides a simple yet robust interface for database change
-management. The philosophy and functionality is inspired by Git. This
-package bundles the Sqitch SQLite support.
-
-%files sqlite
-# No additional files required.
-
 %package oracle
 Summary:        Sane database change management for Oracle
 Group:          Development/Libraries
