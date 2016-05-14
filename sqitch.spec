@@ -1,7 +1,7 @@
 %define _buildid .1
 
 Name:           sqitch
-Version:        0.9992
+Version:        0.9994
 Release:        1%{?_buildid}%{?dist}
 Summary:        Sane database change management
 License:        MIT
