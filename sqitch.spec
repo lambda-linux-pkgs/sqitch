@@ -141,6 +141,9 @@ Requires:       perl(utf8)
 Requires:       perl(warnings)
 Requires:       perl(:MODULE_COMPAT_%(eval "`%{__perl} -V:version`"; echo $version))
 
+# Non-perl requires
+Requires:       git-core
+
 %define etcdir %(%{__perl} -MConfig -E 'say "$Config{prefix}/etc"')
 
 %description
