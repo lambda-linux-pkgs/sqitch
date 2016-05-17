@@ -281,6 +281,16 @@ package bundles the Sqitch MySQL support.
 # No additional files required.
 
 %changelog
+* Tue May 17 2016 Rajiv M Ranganath <rajiv.ranganath@atihita.com> - 0.9994-1
+- Add `git-core` to `Requires:`
+- Import `App-Sqitch-0.9994.tar.gz`
+- Remove `App-Sqitch-0.9992.tar.gz`
+- Add `perl(Pod::Escapes)` to `BuildRequires:`, `Requires:`
+- Add support for multiple versions of MySQL
+- Add support for multiple versions of PostgreSQL
+- Remove oracle support
+- Remove sqlite support
+
 * Sun Jun 07 2015 Rajiv M Ranganath <rajiv.ranganath@atihita.com> 0.9992-1
 - Upgrade to v0.9992
 - Import `App-Sqitch-0.9992.tar.gz`
